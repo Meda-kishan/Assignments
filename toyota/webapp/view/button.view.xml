@@ -1,0 +1,15 @@
+<mvc:View
+	controllerName="application.toyota.controller.button"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m"
+	xmlns:c="sap.ui.core"
+	displayBlock="true"
+	height="100%"
+	busyIndicatorDelay="0"
+>
+
+
+<Button text="Click Me " press="call_frag"/>
+
+
+</mvc:View>

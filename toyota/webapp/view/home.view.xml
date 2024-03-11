@@ -1,0 +1,156 @@
+<mvc:View
+    controllerName="application.toyota.controller.home"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns:core="sap.ui.core"
+    xmlns="sap.m"
+>
+    <Page
+        id="page"
+        title="TOYOTA"
+        enableScrolling="true"
+    >
+        <customHeader>
+            <OverflowToolbar>
+                <Button icon="sap-icon://menu" />
+
+                <ToolbarSpacer />
+
+                <Image
+                    src="https://www.freepnglogos.com/uploads/toyota-logo-png/toyota-logo-photos-png-14.png"
+                    height="20px"
+                    width="20px"
+                />
+
+                <Text
+                    class="main_txt"
+                    text="TOYOTA"
+                />
+                <core:Icon
+                    src="https://global.toyota/pages/global_toyota/mobility/toyota-brand/emblem_ogp_001.png"
+                />
+
+                <ToolbarSpacer />
+
+                <Button
+                    class="icons"
+                    icon="sap-icon://search"
+                />
+
+                <Button
+                    class="icons"
+                    icon="sap-icon://bell"
+                />
+            </OverflowToolbar>
+        </customHeader>
+
+        <footer>
+
+
+            <OverflowToolbar>
+                <ToolbarSpacer />
+
+                <Button icon="sap-icon://home" text="Home" />
+               
+                <ToolbarSpacer />
+
+                <Button icon="sap-icon://car-rental"  text="Vehicle" />
+               
+
+                <ToolbarSpacer />
+                <Button icon="sap-icon://product" text="Product" />
+                
+
+
+                <ToolbarSpacer />
+                <Button icon="sap-icon://overflow" text="More" />
+                
+                <ToolbarSpacer />
+            </OverflowToolbar>
+        </footer>
+
+        <content>
+            <Carousel
+                loop="true"
+                height="50%"
+                
+                class="SapUiContentPadding carosoul"
+            >
+
+                <Image   src="{cars>/images/0/url}" />
+
+                <Image   src="{cars>/images/1/url}" />
+
+                <Image   src="{cars>/images/2/url}" />
+
+                <Image   src="{cars>/images/3/url}" />
+
+                <Image   src="{cars>/images/4/url}" />
+
+                <Image   src="{cars>/images/5/url}" />
+
+                <Image   src="{cars>/images/6/url}" />
+
+
+
+            </Carousel>
+
+            <HBox class="service_box">
+                <Button
+                    text="Book a service"
+                    class="service_btn"
+                />
+            </HBox>
+
+            <VBox class="box_contents" >
+
+            <HBox class="service_cls">
+                <HBox class="service_status">
+                    <core:Icon src="sap-icon://activities" class="red_text" />
+                    <!-- <Button  src="sap-icon://activities"/> -->
+                    <Text text="View  Service status" class="red_text" />
+                </HBox>
+
+                <HBox class="service_status">
+                    <core:Icon src="sap-icon://activities" class="red_text" />
+                    <Text text="View Service status" class="red_text" />
+                </HBox>
+            </HBox>
+
+            <VBox class="recommend_box">
+
+                <FormattedText class="recommend_text" htmlText="&lt;u&gt; Recommended for you &lt;u&gt;">
+
+                </FormattedText>
+
+                <HBox class="camry">
+
+                <VBox>
+                    <Text class="red_text" text="Camry" />
+                    <Text text="General job" />
+
+                </VBox>
+                    <Button  class="quick_btn" text="Quick Book" />
+                </HBox>
+
+                <HBox class="supra">
+
+                <VBox>
+                    <Text class="red_text" text="Supra" />
+                     <Text text="General job" />
+
+                </VBox>
+                    <Button  class="quick_btn" text="Quick Book" />
+                </HBox>
+
+            </VBox>
+
+            </VBox>
+        </content>
+
+
+
+
+    </Page>
+
+</mvc:View>
