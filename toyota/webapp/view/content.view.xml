@@ -1,0 +1,29 @@
+<mvc:View
+	controllerName=""
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core"
+	displayBlock="true"
+	height="100%"
+	busyIndicatorDelay="0"
+>
+
+<Page>
+
+
+<customHeader>
+
+<core:Fragment id="head_fragment" fragmentName="application.toyota.view.fragments.header" type="XML" />
+</customHeader>  
+
+<content>
+<core:Fragment id="head_fragment" fragmentName="application.toyota.view.fragments.content" type="XML" />
+</content>
+
+
+<footer>
+<core:Fragment id="footer_fragment" fragmentName="application.toyota.view.fragments.footer" type="XML" />
+</footer>
+
+</Page>
+</mvc:View>

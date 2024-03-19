@@ -1,0 +1,30 @@
+<c:FragmentDefinition
+	xmlns="sap.m"
+	xmlns:c="sap.ui.core"
+>
+
+
+
+            <OverflowToolbar>
+                <ToolbarSpacer />
+
+                <Button icon="sap-icon://home" text="Home" />
+               
+                <ToolbarSpacer />
+
+                <Button icon="sap-icon://group"  text="Groups" />
+               
+
+                <ToolbarSpacer />
+                <Button icon="sap-icon://newspaper" text="Feed" />
+                
+
+
+                <ToolbarSpacer />
+                <Button icon="sap-icon://call" text="Call" />
+                
+                <ToolbarSpacer />
+            </OverflowToolbar>
+   
+
+</c:FragmentDefinition>

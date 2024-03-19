@@ -1,0 +1,36 @@
+<c:FragmentDefinition
+	xmlns="sap.m"
+	xmlns:c="sap.ui.core"
+>
+
+
+<List >
+
+
+    <ObjectListItem title="User 1"
+    icon="sap-icon://customer"
+    number="1" type="Navigation"/>
+
+    <ObjectListItem  title="John" 
+    
+    icon="sap-icon://customer"
+    type="Navigation"/>
+
+        <ObjectListItem title="Will" 
+    
+    icon="sap-icon://customer"
+    type="Navigation"/>
+
+    <ObjectListItem title="max" 
+    
+    icon="sap-icon://customer"
+    type="Navigation"/>
+
+    <ObjectListItem title="User 4" 
+    
+    icon="sap-icon://customer"
+    type="Navigation"/>
+
+
+</List>
+</c:FragmentDefinition>

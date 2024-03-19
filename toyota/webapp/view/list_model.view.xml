@@ -1,0 +1,72 @@
+<mvc:View
+    controllerName="application.toyota.controller.list_model"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:c="sap.ui.core"
+    displayBlock="true"
+    height="100%"
+    busyIndicatorDelay="0"
+>
+    <VBox class="label_hbox">
+        <Label
+            id="label_1"
+            text="Enter your first Name"
+        />
+        <Input type="Text" />
+
+<Button text="click to Open fragmment" press=".book_service"></Button>
+
+<!-- <List
+                        class="sapUiTinyMargin"
+                        headerText="PRODUCTS"
+                        items="{mobile>/}"
+                        id="products_list"
+                    >
+                        <items>
+                            <ObjectListItem
+                                title="{mobile>name}"
+                                icon="{mobile>productImage}"
+                                number="{mobile>price} $ "
+
+                           
+
+                                numberState="{
+                                    path : 'mobile>price',
+                                    formatter: '.formatter.fncolor'
+                                }"
+                                type="Navigation"
+                                press=".mobile_clicked"
+                                
+                            >
+                                 <firstStatus>
+                                <ObjectStatus 
+                                    text="{
+                                        path : 'mobile>price',
+                                        formatter : '.formatter.fnstatus'
+                                    }"
+                                />
+                                </firstStatus>
+                                <attributes>
+
+                                    <ObjectAttribute
+                                        text="Model Name: {mobile>name}"
+                                    />
+                                    <ObjectAttribute
+                                        text="Model Number :  {mobile>modelNumber}"
+                                    />
+                                    <ObjectAttribute
+                                        text="ROM : {mobile>ROM} GB"
+                                    />
+                                    <ObjectAttribute
+                                        text="Camera : {mobile>camera}"
+                                    />
+                                    <ObjectAttribute />
+                                </attributes>
+                            </ObjectListItem>
+                        </items>
+                    </List> -->
+
+                    
+
+    </VBox>
+</mvc:View>

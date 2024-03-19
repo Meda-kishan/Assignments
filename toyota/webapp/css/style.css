@@ -1,0 +1,138 @@
+.header_content
+{
+    border: 2px solid black;
+    justify-content: space-between;
+}
+
+
+.header
+{
+    justify-content:space-between;
+}
+
+.main_txt
+{
+    color: #D24545;
+    font-weight: bold;
+}
+
+
+
+.sapMIBar .sapMBtn .sapMBtnInner.sapMBtnDefault, .sapMIBar .sapMBtn .sapMBtnInner.sapMBtnDefault .sapUiIcon, .sapUxAPObjectPageHeaderIdentifierActions .sapMBtn .sapMBtnInner.sapMBtnDefault, .sapUxAPObjectPageHeaderIdentifierActions .sapMBtn .sapMBtnInner.sapMBtnDefault .sapUiIcon
+{
+    
+    color: red;
+
+}
+
+
+
+
+
+.carosoul
+{
+    align-items: center;
+    margin: 10px;
+}
+
+
+
+/* .sapMBtnInner.sapMBtnHoverable.sapMFocusable.sapMBtnText.sapMBtnDefault{
+    border-radius: 40px;
+    background-color:red;
+    color: #fff;
+    width: 200px;
+
+
+} */
+
+.service_box
+{
+    justify-content: center;
+
+}
+
+.footer_icons
+{
+    justify-content: space-between;
+}
+
+.service_cls
+{
+    justify-content: space-around;
+}
+
+.service_status
+{
+
+    margin: 5px;
+    padding: 20px;
+    border-radius:10px;
+    background-color:#fff;
+}
+
+.box_contents
+{
+    background-color:red;
+
+}   
+
+.recommend_box
+{
+    background-color: #fff;
+    justify-content: space-between;
+    border-radius: 20px;
+    margin: 5px;
+}
+
+.camry,.supra
+{
+    justify-content: space-around;
+    margin: 5px;
+}
+
+.recommend_text
+{
+    margin: 5px;
+    padding: 10px;
+}
+
+.red_text
+{
+    color: red;
+}
+
+.service_btn .sapMBtnInner.sapMBtnHoverable.sapMFocusable.sapMBtnText.sapMBtnDefault
+{
+    border-radius: 40px;
+    background-color:red;
+    color: #fff;
+    width: 200px;
+}
+
+
+.quick_btn .sapMBtnInner.sapMBtnHoverable.sapMFocusable.sapMBtnText.sapMBtnDefault
+{
+    border-radius: 10px;
+    background-color: red;
+    color: white;
+}
+
+.contact_icons
+{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+}
+
+.label_hbox
+{
+    margin: 20px;
+    padding: 40px;
+}
+
+.label_style
+{
+    color: red;
+    font-weight: bold;
+}

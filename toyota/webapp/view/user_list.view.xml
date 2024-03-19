@@ -1,0 +1,46 @@
+<mvc:View
+	controllerName="application.toyota.controller.user_list"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m"
+	xmlns:c="sap.ui.core"
+	displayBlock="true"
+	height="100%"
+	busyIndicatorDelay="0"
+>
+
+
+<Page enableScrolling="true" title="User Data">
+
+<List  items="{user_data>/users/}">
+
+<items>
+
+    <ObjectListItem  
+    
+    title="{user_data>firstName} {user_data>lastName}" 
+    number="{user_data>weight} KG " 
+    icon="{user_data>image}"
+    numberState="{
+        path : 'user_data>weight',
+        formatter : '.formatter.fnweight' }"
+    >
+
+    <ObjectAttribute text="Email : {user_data>email}" />
+    <ObjectAttribute text="Phone :{user_data>phone}" />
+    <ObjectAttribute text="ip:{user_data>ip}" />
+
+    
+
+</ObjectListItem>
+ 
+
+</items>
+
+
+</List>
+
+
+</Page>
+
+
+</mvc:View>

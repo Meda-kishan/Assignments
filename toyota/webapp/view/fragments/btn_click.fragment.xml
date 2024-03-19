@@ -1,0 +1,22 @@
+<c:FragmentDefinition
+    xmlns="sap.m"
+    xmlns:c="sap.ui.core"
+
+    
+>
+    <Dialog
+        title="Popup opened"
+        id="pop_dialog"
+    >
+        <content>
+            <Text
+                id="popup_text"
+                text="Popup button clicked successfully"
+            />
+        </content>
+
+        <beginButton>
+            <Button text="Close"  press=".close_popup" />
+        </beginButton>
+    </Dialog>
+</c:FragmentDefinition>
