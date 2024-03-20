@@ -92,6 +92,11 @@
 
       },
 
+      "cart_data" :{
+        "type": "sap.ui.model.json.JSONModel",
+        "uri" : "carts_data.json"
+      },
+
 
 
       "odata_model":{
@@ -145,7 +150,7 @@
           "transition": "slide",
           "clearControlAggregation": false,
           "viewId": "home",
-          "viewName": "user_list"
+          "viewName": "cart_table"
         }
 
 

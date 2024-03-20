@@ -39,10 +39,14 @@ sap.ui.define([], function() {
 
         fnweight(weight)
         {
+
+
             if(weight<80)
             {
                 return 'Success'
             }
+
+
 
             else if(weight <100)
             {
@@ -52,7 +56,10 @@ sap.ui.define([], function() {
             {
                 return 'Error'
             }
+
+   
         }
+
     }
 });
 

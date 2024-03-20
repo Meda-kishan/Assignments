@@ -1,0 +1,57 @@
+<mvc:View
+    controllerName="application.toyota.controller.cart_table"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:c="sap.ui.core"
+    displayBlock="true"
+    height="100%"
+    busyIndicatorDelay="0"
+>
+<Page enableScrolling="true">
+    <Table items="{cart_data>/carts/}">
+        <columns>
+            <Column>
+                <Text text="Product Image" />
+            </Column>
+
+            <Column>
+                <Text text="products Name" />
+            </Column>
+
+            <Column>
+                <Text text="Total Price" />
+            </Column>
+
+            <Column>
+                <Text text="Discount Percentage" />
+            </Column>
+
+            <Column>
+                <Text text="Discounted Total" />
+            </Column>
+        </columns>
+
+    <items>
+    
+        <ColumnListItem >
+        
+
+        <cells>
+
+        <Image src="{cart_data>products/0/thumbnail}" height="100px" width="100px" />
+        <Text text="{cart_data>products/0/title}" />
+        <Text text="{cart_data>products/0/total}"/>
+        <Text text="{cart_data>products/0/discountPercentage}"/>
+        <Text text="{cart_data>products/0/discountedPrice}"  /> 
+
+
+ 
+        </cells>
+        </ColumnListItem>
+    
+    </items>
+
+    </Table>
+
+    </Page>
+</mvc:View>
