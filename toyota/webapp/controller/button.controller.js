@@ -22,12 +22,13 @@ sap.ui.define([
 
     closeDialog()
     {
-        this.byId("contactusDialog").close();
+        this.dialog.then((odialog) => odialog.close())
+      
     },
 
     onsubmit()
     {
-        this.byId("contactusDialog").close();
+        this.dialog.then((odialog) => odialog.close())
         MessageToast.show("Form submitted Successfully");
 
     },
