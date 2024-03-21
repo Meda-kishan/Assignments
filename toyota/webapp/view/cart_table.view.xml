@@ -3,6 +3,7 @@
     xmlns:mvc="sap.ui.core.mvc"
     xmlns="sap.m"
     xmlns:c="sap.ui.core"
+    xmlns:l="sap.ui.layout"
     displayBlock="true"
     height="100%"
     busyIndicatorDelay="0"
@@ -26,9 +27,13 @@
                 <Text text="Discount Percentage" />
             </Column>
 
+      
             <Column>
                 <Text text="Discounted Total" />
             </Column>
+            
+    
+        
         </columns>
 
     <items>
@@ -38,11 +43,26 @@
 
         <cells>
 
+
+
+
         <Image src="{cart_data>products/0/thumbnail}" height="100px" width="100px" />
         <Text text="{cart_data>products/0/title}" />
         <Text text="{cart_data>products/0/total}"/>
         <Text text="{cart_data>products/0/discountPercentage}"/>
-        <Text text="{cart_data>products/0/discountedPrice}"  /> 
+
+
+        <VBox class="green" >
+                  <Text text="{cart_data>products/0/discountedPrice}"  /> 
+                
+                  <Text text="{
+
+            path : 'cart_data>products/0/discountPercentage',
+            formatter : '.formatter.fndiscount'
+        }" />
+                </VBox>
+
+            
 
 
  
@@ -52,6 +72,9 @@
     </items>
 
     </Table>
+
+
+
 
     </Page>
 </mvc:View>

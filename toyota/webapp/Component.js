@@ -56,6 +56,7 @@ sap.ui.define(
         const car_model = new JSONModel(cars);
         this.setModel(car_model, "cars");
       },
+
     });
   }
 );

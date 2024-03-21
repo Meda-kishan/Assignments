@@ -57,7 +57,24 @@ sap.ui.define([], function() {
                 return 'Error'
             }
 
-   
+
+        },
+
+        fndiscount(discount_percentage)
+        {
+           
+            if(discount_percentage < 10)
+            {
+                
+               
+                return 'red';
+            }
+
+            else if(discount_percentage >10)
+            {
+           
+                return 'green';
+            }
         }
 
     }

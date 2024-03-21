@@ -15,28 +15,15 @@
       "version": "1.12.5",
       "toolsId": "d8504cae-7557-4e2f-8ab0-e1da2b5a42e9"
     },
-
-
-
-
-      "dataSources": {
-
-        "odata_northwind":{
-
-          "uri": "https://services.odata.org/v4/northwind/northwind.svc//",
-          "type": "OData",
-          "settings": {
-                "odataVersion": "4.0" 
-          }
+    "dataSources": {
+      "odata_northwind": {
+        "uri": "https://services.odata.org/v4/northwind/northwind.svc//",
+        "type": "OData",
+        "settings": {
+          "odataVersion": "4.0"
         }
-
       }
-
-
-
-
-
-
+    }
   },
   "sap.ui": {
     "technology": "UI5",
@@ -80,32 +67,24 @@
           "bundleName": "application.toyota.i18n.i18n"
         }
       },
-
-      "mobile" : {
-				"type": "sap.ui.model.json.JSONModel",
-				"uri": "data.json"
-			},
-
-      "user_data" :{
+      "mobile": {
+        "type": "sap.ui.model.json.JSONModel",
+        "uri": "data.json"
+      },
+      "user_data": {
         "type": "sap.ui.model.json.JSONModel",
         "uri": "user_data.json"
-
       },
 
-      "cart_data" :{
+      "cart_data": {
         "type": "sap.ui.model.json.JSONModel",
-        "uri" : "carts_data.json"
+        "uri": "carts_data.json"
       },
 
-
-
-      "odata_model":{
+      "odata_model": {
         "dataSource": "odata_northwind"
       }
-
-
-
-
+      
     },
     "resources": {
       "css": [
@@ -128,21 +107,10 @@
         {
           "name": "Routehome",
           "pattern": ":?query:",
-
-
-
-          
           "target": [
             "Targethome"
           ]
-
-
-          
         }
-
-
-
-
       ],
       "targets": {
         "Targethome": {
@@ -152,8 +120,6 @@
           "viewId": "home",
           "viewName": "cart_table"
         }
-
-
       }
     },
     "rootView": {
