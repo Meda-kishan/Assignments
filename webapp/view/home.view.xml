@@ -1,0 +1,44 @@
+<mvc:View controllerName="remoteservice.odata.controller.home"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        
+
+
+        <!-- odata from View -->
+        
+        <List items="{/Orders}">
+
+            <items>
+
+                    <ObjectListItem 
+                    
+                            title="{ShipCountry}"
+                            intro="{ShipAddress}"
+                            number="{OrderID}"
+                    
+                    ></ObjectListItem>
+                    
+                </items>
+        </List>
+
+
+        <!-- oData from controller -->
+
+                <List items="{model_odata>/list_data/}">
+
+            <items>
+
+                    <ObjectListItem 
+
+                            title="{model_odata>ProductName}"
+                            intro="{model_odata>QuantityPerUnit}"
+                            number="{model_odata>ProductID}"
+                    
+                    ></ObjectListItem>
+                    
+                </items>
+        </List>
+
+    </Page>
+</mvc:View>
