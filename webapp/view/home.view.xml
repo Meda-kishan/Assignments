@@ -7,7 +7,38 @@
 
         <!-- odata from View -->
         
-        <List items="{/Orders}">
+        <List items="{path : '/Orders', 
+                filters:
+                [
+                        {
+                                path : 'ShipCountry', 
+                                operator: 'EQ', 
+                                value1 : 'USA'
+                               
+                        },
+
+                          {
+                                path : 'ShipCountry', 
+                                operator: 'EQ', 
+                               
+                                value1 : 'Germany'
+                                
+                        }
+                        
+                ],
+
+                sorter :
+                [
+                        {
+                                path : 'OrderID',
+                                descending : true
+                                
+                                
+
+                        }
+                ]
+                
+                }">
 
             <items>
 
@@ -16,7 +47,7 @@
                             title="{ShipCountry}"
                             intro="{ShipAddress}"
                             number="{OrderID}"
-                    
+
                     ></ObjectListItem>
                     
                 </items>

@@ -1,10 +1,14 @@
 sap.ui.define([
-    "sap/ui/core/mvc/Controller"
+    "sap/ui/core/mvc/Controller",
+    "sap/ui/model/Filter",
+	"sap/ui/model/FilterOperator",
+    "sap/ui/model/Sorter"
+
 ],
     /**
      * @param {typeof sap.ui.core.mvc.Controller} Controller
      */
-    function (Controller) {
+    function (Controller,Filter,FilterOperator,Sorter) {
         "use strict";
 
         return Controller.extend("remoteservice.odata.controller.home", {
@@ -14,8 +18,8 @@ sap.ui.define([
 
             //    odata_model.read("/Orders", {success: (data)=>console.log(data), error: ()=>console.log("error occured while getting data")});
                
-            
-            //     debugger
+                // this.get_data();
+
                 this.get_data();
 
 
@@ -23,35 +27,64 @@ sap.ui.define([
 
 
 
-            get_data: function()
+
+            get_data()
             {
                 let odata_model=this.getOwnerComponent().getModel();
-                let ojson_model=this.getOwnerComponent().getModel("model_odata");
+                let json_model=this.getOwnerComponent().getModel("model_odata");
 
-                odata_model.read("/Products" ,{
-                    success(data)
+
+                //Filter to find the productName that starts with 'c'
+                let ofilter=new Filter(
                     {
-                        console.log(data);
-                        console.log(data.results)
-
-                        
-                        ojson_model.setProperty("/list_data",data.results);
-
-                        console.log(ojson_model.getProperty("/list_data"),"model data")
-
-                        console.log("ojson model:  ")
-                        console.log(ojson_model.getData().list_data)
-                        
-                        debugger
-
-                    },
-                    error(err)
-                    {
-                        console.log(err);
-                        debugger
+                        path : 'ProductName',
+                        operator : 'StartsWith',
+                        value1 : 'C'
                     }
+                );
 
-                })
+                //Filter to find the productName that starts with 'A'
+                let ofilter_A=new Filter(
+                    {
+                        path : 'ProductName',
+                        operator : 'StartsWith',
+                        value1 : 'A'
+                    }
+                );
+
+
+                
+                //Sorter function to arrangr the productID in ascedding order
+                let sort=new Sorter(
+                    {
+                        path : 'ProductID',
+                        bdescending : true
+
+                    }
+                );
+
+
+                odata_model.read("/Products",
+                    {
+                    
+                        filters : [ofilter,ofilter_A],
+
+                        sorters : [sort],
+
+                        success(data)
+                        {
+
+                            json_model.setProperty("/list_data",data.results);
+
+                        },
+                        error(err)
+                        {
+                            console.log(err);
+                        }
+
+                        
+                    }
+                )
             }
 
 
