@@ -118,7 +118,7 @@
           "transition": "slide",
           "clearControlAggregation": false,
           "viewId": "home",
-          "viewName": "cart_table"
+          "viewName": "lang_form"
         }
       }
     },

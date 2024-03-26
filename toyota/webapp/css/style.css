@@ -147,3 +147,28 @@
     align-items: center;
     padding: 20px;
 }
+
+
+.lang_form
+{
+    margin: 200px;
+    margin-top: 30px;
+    margin-bottom: auto;
+    padding: 50px;
+    /* border: 2px solid black; */
+    border-radius: 20px;
+    background-color: #fff;
+}
+
+
+.name_label,.employee_label,.designation_label,.place_label,.department_label
+{
+    font-weight: bold;
+}
+
+.submit_btn
+{
+    margin: 15px;
+    justify-content: center;
+    align-items: center;
+}

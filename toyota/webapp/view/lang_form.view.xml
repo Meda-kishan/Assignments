@@ -1,0 +1,61 @@
+<mvc:View
+	controllerName="application.toyota.controller.lang_form"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core"
+	displayBlock="true"
+	height="100%"
+	busyIndicatorDelay="0"
+>
+
+
+<Page title="{i18n>title}" titleAlignment="Center">
+<VBox class="sapUiMediumMargin">
+<Text text="Select your Language"  class="sapUIMediumMargin lang_text" />
+
+
+<ComboBox  selectedKey="en" selectionChange=".on_language_select">
+<items>
+
+<core:Item key="en" text="English" />
+<core:Item key="ar" text="Arabic" />
+<core:Item key="fr" text="French" />
+
+</items>
+
+</ComboBox>
+
+</VBox>
+
+
+<VBox class="sapUILargeMargin lang_form"  >
+
+    <Text text="FIll the Form"/>
+
+    <Label text="{i18n>name}"  class="name_label"/>
+    <Input  />
+
+    <Label text="{i18n>EmployeeID}" class="employee_label"/>
+    <Input />
+
+    <Label text="{i18n>Designation}" class="designation_label"/>
+    <Input />
+
+    <Label text="{i18n>Place}" class="place_label" />
+    <Input />
+
+
+    <Label text="{i18n>Department}" class="department_label"/>
+    <Input />
+
+    <VBox class="submit_btn">
+    <Button text="{i18n>submit}"></Button>
+    </VBox>
+
+</VBox>
+
+
+
+</Page>
+
+</mvc:View>
