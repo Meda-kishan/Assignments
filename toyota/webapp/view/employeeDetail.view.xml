@@ -1,0 +1,100 @@
+<mvc:View
+    controllerName="application.toyota.controller.employeeDetail"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:c="sap.ui.core"
+    displayBlock="true"
+    height="100%"
+    busyIndicatorDelay="0"
+>
+
+<Page  title="Employee Details">
+
+
+<HBox class="emp_main_head">
+	<Text text="{employee>Name} Details" class="emp_main_head_txt"></Text>
+
+</HBox>
+
+    <VBox class="sapUiMediumMargin emp_content">
+        <VBox class="sapUiSmallMargin employee_detail">
+            <HBox class="emp_name">
+                <Text text="Basic Information" class="box_heading" />
+            </HBox>
+
+                    <HBox>
+                        <Title text="Name :" />
+                        <Text text="  {employee>Name}" />
+                        
+                    </HBox>
+             
+
+
+
+                    <HBox>
+                        <Title text="Department " ></Title>
+                        <Text text="  : {employee>Department}" />
+
+                    </HBox>
+
+
+                    <HBox>
+
+                        <Title text="Gender :"></Title>
+                        <Text text=" {employee>Gender}" />
+
+                    </HBox>
+
+
+                    <HBox>
+                        <Title text="Base Location :"></Title>
+                        <Text text="{employee>Base Location}" />
+                    </HBox>
+        </VBox>
+
+
+
+        <VBox class="sapUiSmallMargin employee_detail">
+
+            <HBox class="emp_name">
+                <Text text="Additional Details" class="box_heading" />
+            </HBox>
+
+
+
+            <Title text="Emergency contact :"></Title>
+
+                
+                <Text
+                    text=" {employee>Additional Details/Emergency Contact/Name} : {employee>Additional Details/Emergency Contact/Number}"
+                />
+
+           
+
+			<Text text="" />
+                
+
+
+
+         <Title text="Home Address :"></Title>
+
+
+			 <Text
+                text="Street : {employee>Additional Details/Home Address/Street}"
+            />
+
+			<Text
+                text="Flat No : {employee>Additional Details/Home Address/Flat No}"
+            />
+
+			
+			<Text
+                text="City : {employee>Additional Details/Home Address/City}"
+            />
+
+
+        </VBox>
+    </VBox>
+
+	</Page>
+</mvc:View>

@@ -1,0 +1,32 @@
+<mvc:View
+    controllerName="application.toyota.controller.employeeList"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:c="sap.ui.core"
+    displayBlock="true"
+    height="100%"
+    busyIndicatorDelay="0"
+>
+    <Page title="Employee List">
+        <List items="{employee>/}">
+            <items>
+
+
+                <ObjectListItem
+                    type="Navigation"
+                    press=".employee_clicked"
+                    title="{employee>Name}"
+                    number="{employee>Department}"
+                >
+
+                
+
+                    <ObjectAttribute text="Gender : {employee>Gender}"></ObjectAttribute>
+                    <ObjectAttribute text="Base Location : {employee>Base Location}"  ></ObjectAttribute>
+
+                </ObjectListItem>
+
+            </items>
+        </List>
+    </Page>
+</mvc:View>

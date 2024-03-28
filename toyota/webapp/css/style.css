@@ -1,0 +1,245 @@
+.header_content
+{
+    border: 2px solid black;
+    justify-content: space-between;
+}
+
+
+.header
+{
+    justify-content:space-between;
+}
+
+.main_txt
+{
+    color: #D24545;
+    font-weight: bold;
+}
+
+
+
+.sapMIBar .sapMBtn .sapMBtnInner.sapMBtnDefault, .sapMIBar .sapMBtn .sapMBtnInner.sapMBtnDefault .sapUiIcon, .sapUxAPObjectPageHeaderIdentifierActions .sapMBtn .sapMBtnInner.sapMBtnDefault, .sapUxAPObjectPageHeaderIdentifierActions .sapMBtn .sapMBtnInner.sapMBtnDefault .sapUiIcon
+{
+    
+    color: red;
+
+}
+
+
+
+
+
+.carosoul
+{
+    align-items: center;
+    margin: 10px;
+}
+
+
+
+/* .sapMBtnInner.sapMBtnHoverable.sapMFocusable.sapMBtnText.sapMBtnDefault{
+    border-radius: 40px;
+    background-color:red;
+    color: #fff;
+    width: 200px;
+
+
+} */
+
+.service_box
+{
+    justify-content: center;
+
+}
+
+.footer_icons
+{
+    justify-content: space-between;
+}
+
+.service_cls
+{
+    justify-content: space-around;
+}
+
+.service_status
+{
+
+    margin: 5px;
+    padding: 20px;
+    border-radius:10px;
+    background-color:#fff;
+}
+
+.box_contents
+{
+    background-color:red;
+
+}   
+
+.recommend_box
+{
+    background-color: #fff;
+    justify-content: space-between;
+    border-radius: 20px;
+    margin: 5px;
+}
+
+.camry,.supra
+{
+    justify-content: space-around;
+    margin: 5px;
+}
+
+.recommend_text
+{
+    margin: 5px;
+    padding: 10px;
+}
+
+.red_text
+{
+    color: red;
+}
+
+.service_btn .sapMBtnInner.sapMBtnHoverable.sapMFocusable.sapMBtnText.sapMBtnDefault
+{
+    border-radius: 40px;
+    background-color:red;
+    color: #fff;
+    width: 200px;
+}
+
+
+.quick_btn .sapMBtnInner.sapMBtnHoverable.sapMFocusable.sapMBtnText.sapMBtnDefault
+{
+    border-radius: 10px;
+    background-color: red;
+    color: white;
+}
+
+.contact_icons
+{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+}
+
+.label_hbox
+{
+    margin: 20px;
+    padding: 40px;
+}
+
+.label_style
+{
+    color: red;
+    font-weight: bold;
+}
+
+
+
+.green 
+{
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+
+.lang_form
+{
+    margin: 200px;
+    margin-top: 30px;
+    margin-bottom: auto;
+    padding: 50px;
+    /* border: 2px solid black; */
+    border-radius: 20px;
+    background-color: #fff;
+}
+
+
+.name_label,.employee_label,.designation_label,.place_label,.department_label
+{
+    font-weight: bold;
+}
+
+.submit_btn
+{
+    margin: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.form_head
+{
+    border-radius: 2px solid black;
+    margin: 15px;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+
+.emp_content
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+
+
+.employee_detail
+{
+    border: 2px solid black;
+    padding: 40px;
+    width: 800px;
+    margin: auto;
+    border-radius: 20px ;
+    background-color: #fff;
+}
+
+
+
+.emp_name
+{
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+
+}
+
+.emg_contact
+{
+    font-weight: bold;
+    margin: 5px;
+    margin-left: 0px;
+
+
+
+}
+
+.box_heading
+{
+    font-size: 20px;
+}
+
+.emp_main_head
+{
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.emp_main_head_txt
+{
+    margin: 5px;
+    padding: 10px;
+    font-size: 30px;
+}

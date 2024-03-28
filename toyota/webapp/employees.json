@@ -1,0 +1,172 @@
+[
+    {
+        "Name": "John Smith",
+        "Department": "Engineering",
+        "Gender": "Male",
+        "Base Location": "San Francisco",
+        "Additional Details": {
+            "Emergency Contact": {
+                "Name": "Jane Smith",
+                "Number": "555-123-4567"
+            },
+            "Home Address": {
+                "Street": "Maple Street",
+                "Flat No.": "789",
+                "City": "San Francisco"
+            }
+        }
+    },
+    {
+        "Name": "Emma Johnson",
+        "Department": "Sales",
+        "Gender": "Female",
+        "Base Location": "Chicago",
+        "Additional Details": {
+            "Emergency Contact": {
+                "Name": "Alex Johnson",
+                "Number": "555-987-6543"
+            },
+            "Home Address": {
+                "Street": "Lakeview Avenue",
+                "Flat No.": "456",
+                "City": "Chicago"
+            }
+        }
+    },
+    {
+        "Name": "Amit Gupta",
+        "Department": "Customer Support",
+        "Gender": "Male",
+        "Base Location": "Delhi",
+        "Additional Details": {
+            "Emergency Contact": {
+                "Name": "Priya Gupta",
+                "Number": "987-654-3210"
+            },
+            "Home Address": {
+                "Street": "Gandhi Nagar",
+                "Flat No.": "101",
+                "City": "Delhi"
+            }
+        }
+    },
+    {
+        "Name": "Sophia Kim",
+        "Department": "Research",
+        "Gender": "Female",
+        "Base Location": "Seoul",
+        "Additional Details": {
+            "Emergency Contact": {
+                "Name": "Daniel Kim",
+                "Number": "123-456-7890"
+            },
+            "Home Address": {
+                "Street": "Sejong Street",
+                "Flat No.": "321",
+                "City": "Seoul"
+            }
+        }
+    },
+    {
+        "Name": "Mohammed Khan",
+        "Department": "IT",
+        "Gender": "Male",
+        "Base Location": "Dubai",
+        "Additional Details": {
+            "Emergency Contact": {
+                "Name": "Fatima Khan",
+                "Number": "555-555-5555"
+            },
+            "Home Address": {
+                "Street": "Jumeirah Road",
+                "Flat No.": "789",
+                "City": "Dubai"
+            }
+        }
+    },
+    {
+        "Name": "Isabella Martinez",
+        "Department": "Finance",
+        "Gender": "Female",
+        "Base Location": "Madrid",
+        "Additional Details": {
+            "Emergency Contact": {
+                "Name": "Juan Martinez",
+                "Number": "333-333-3333"
+            },
+            "Home Address": {
+                "Street": "Calle Mayor",
+                "Flat No.": "456",
+                "City": "Madrid"
+            }
+        }
+    },
+    {
+        "Name": "David Wilson",
+        "Department": "Operations",
+        "Gender": "Male",
+        "Base Location": "London",
+        "Additional Details": {
+            "Emergency Contact": {
+                "Name": "Sarah Wilson",
+                "Number": "444-444-4444"
+            },
+            "Home Address": {
+                "Street": "Baker Street",
+                "Flat No.": "123",
+                "City": "London"
+            }
+        }
+    },
+    {
+        "Name": "Chloe Lee",
+        "Department": "Marketing",
+        "Gender": "Female",
+        "Base Location": "Sydney",
+        "Additional Details": {
+            "Emergency Contact": {
+                "Name": "Daniel Lee",
+                "Number": "777-777-7777"
+            },
+            "Home Address": {
+                "Street": "George Street",
+                "Flat No.": "101",
+                "City": "Sydney"
+            }
+        }
+    },
+    {
+        "Name": "Daniel Brown",
+        "Department": "Legal",
+        "Gender": "Male",
+        "Base Location": "Washington D.C.",
+        "Additional Details": {
+            "Emergency Contact": {
+                "Name": "Emily Brown",
+                "Number": "666-666-6666"
+            },
+            "Home Address": {
+                "Street": "Constitution Avenue",
+                "Flat No.": "222",
+                "City": "Washington D.C."
+            }
+        }
+    },
+    {
+        "Name": "Anna Kowalski",
+        "Department": "Human Resources",
+        "Gender": "Female",
+        "Base Location": "Warsaw",
+        "Additional Details": {
+            "Emergency Contact": {
+                "Name": "Piotr Kowalski",
+                "Number": "888-888-8888"
+            },
+            "Home Address": {
+                "Street": "Aleje Jerozolimskie",
+                "Flat No.": "333",
+                "City": "Warsaw"
+            }
+        }
+    }
+]
